@@ -22,4 +22,5 @@ function exactMatch(drivers, obj){
       result.push(x);
     }
   });
+  return result;
 }
