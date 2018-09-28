@@ -19,7 +19,7 @@ function exactMatch(drivers, obj){
   let result = [];
   result = drivers.filter(x =>{
     if (x[theKey] === theValu){
-      result.push(x);
+      return x;
     }
   });
   return result;
