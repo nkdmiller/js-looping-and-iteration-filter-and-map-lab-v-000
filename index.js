@@ -25,4 +25,14 @@ function exactMatch(drivers, obj){
   return result;
 }
 
-function 
+function exactMatchToList(drivers, obj){
+  theKey = Object.keys(obj)[0];
+  theValu = obj[theKey];
+  let result = [];
+  result = drivers.filter(x =>{
+    if (x[theKey] === theValu){
+      return x.name;
+    }
+  });
+  return result;
+}
