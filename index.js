@@ -29,8 +29,8 @@ function exactMatchToList(drivers, obj){
   theKey = Object.keys(obj)[0];
   theValu = obj[theKey];
   let result = [];
-  result = drivers.filter(x =>{
-    if (x[theKey] == theValu){
+  drivers.filter(x =>{
+    if (x[theKey] === theValu){
       result.push(x.name);
     }
   });
